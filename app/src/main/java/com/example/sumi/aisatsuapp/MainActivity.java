@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.button1) {
             showTimePickerDialog();
         } else if (v.getId() == R.id.button2) {
-            if (mHourOfDay <= 2 && mHourOfDay <= 9) {
+            if (mHourOfDay >=2 && mHourOfDay <= 9) {
                 mTextView.setText("おはよう" + mHourOfDay + ":" + mMinute);
-            } else if (mHourOfDay >= 10 && mMinute <= 17) {
+            } else if (mHourOfDay >= 10 && mHourOfDay <= 17) {
                 mTextView.setText("こんにちは" + mHourOfDay + ":" + mMinute);
             } else {
                 mTextView.setText("こんばんは" + mHourOfDay + ":" + mMinute);
